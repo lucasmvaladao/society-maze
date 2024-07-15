@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* ou outro valor dependendo do seu layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o header */
+    z-index: 0; /* Certifique-se de que a imagem fique atrás da navegação */
+}
+
+nav {
+    position: absolute;
+    top: 20px; /* Ajuste para posicionar a navegação */
+    width: 40%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    background: rgba(217, 217, 217, 0.25);
+    border-radius: 30px;
+    z-index: 1; /* Certifique-se de que a navegação fique na frente da imagem */
+}
+
+nav a {
+    color: #FFF;
+    font-family: Anybody, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    background: white; /* Cor da linha */
+    width: 0;
+    height: 2px; /* Espessura da linha */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+/* Estilos para o pseudo-elemento da linha ao passar o mouse */
+nav a:hover::before {
+    width: 100%;
+}
+
+.titulo-prin{
+    position: relative;
+    z-index: 2;
+    bottom: 700px;
+    left: 100px;
+}
+
+.titulo-prin > h1{
+    color: #FFF;
+    font-family: Anybody, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 104.167%; /* 50px */
+}
+
+
+.titulo-prin > p{
+    color: #FFF;
+    text-shadow: 1px 4px 21px rgba(0, 0, 0, 0.25);
+    font-family: Anybody, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.intruducao_conteiner {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+    position: relative;
+    bottom: 200px;
+    height: auto;
+    width: auto;
+}
+
+.blue {
+    background-color: #0054A5;
+}
+
+.brown {
+    background-color: #966F4D;
+}
+
+.green {
+    background-color: #2B6673;
+}
+
+.intro_cards {
+    width: 350px;
+    height: 395px;
+    box-shadow: 1px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.intro_titulo {
+    color: white;
+    font-family: Anybody, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 27px 79px 19px 25px;
+}
+
+.intro_text {
+    color: #FFF;
+    font-family: Assistant, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 58px 54px 25px;
+}
+
+#line {
+    margin-left: 100px;
+    display: flex;
+    position: absolute;
+    top: 1000px;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 150px;
+   bottom: 200px;
+}
+
+.beneficios_conteiner {
+    display: flex;
+    padding-top: 79px;
+    padding-left: 45px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.bene_titulo {
+    color: #000;
+    font-family: Anybody, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bene_text {
+    color: #000;
+    font-family: Assistant, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
